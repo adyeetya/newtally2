@@ -261,13 +261,14 @@ export const Footer: FC = () => {
                     </div>
                   </div>
                   <div className="col-lg-6 col-md-6 mt-5 mt-md-0">
-                    <div className="footer-anim">
+                   
                       <img
-                        src="https://www.tallysolution.net/assets/images/footer-rock.png"
-                        width={200}
-                        style={{ filter: 'invert(0)' }}
+                        src="/images/footer-rock.png"
+                        width={300}
+                        style={{ filter: 'invert(0)', marginTop:'240px' }}
+                        
                       />
-                    </div>
+                
                   </div>
                 </div>
               </div>

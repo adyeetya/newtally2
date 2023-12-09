@@ -1,4 +1,5 @@
 import { FC } from "react";
+import FeatureProjects from "../FeatureProjects";
 
 export const Useful: FC = () => {
   return (
@@ -272,40 +273,8 @@ export const Useful: FC = () => {
       </div>
     </section>
 
-    <section>
-        <div className="pb-0 ">
-            <div className="container-fluid pe-sm-0">
-                <div className="row">
-                    <div className="mx-auto col-lg-12 col-md-12">
-                    <div className="section-title md-mb-3 text-center">
-                    <h3>Our Work</h3>
-                    <h1 className="title">Feature Projects</h1>
-                </div>
-                    </div>
-                    <div className="col-lg-12 col-md-12 ms-sm-n5 side-top-bg mt-5 mt-lg-0">
-                        
-
-
-
-
-
-
-
-       
-
-
-
-
-
-
-
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<FeatureProjects />
+    
 
     <section className=" text-center mt-12 p-0" id="remove">
   <div className="container">

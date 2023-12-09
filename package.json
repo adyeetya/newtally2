@@ -20,11 +20,12 @@
     "format:watch": "onchange . -- prettier --write {{changed}}"
   },
   "dependencies": {
-    "@coreui/coreui": "^4.3.2",
     "@coreui/react": "^4.11.0",
     "@flaticon/flaticon-uicons": "^3.0.0",
     "@lottiefiles/lottie-player": "^2.0.2",
     "@mdbootstrap/react-testimonial-slider": "^1.0.0",
+    "@mui/icons-material": "^5.14.19",
+    "@mui/material": "^5.14.20",
     "@tippyjs/react": "^4.2.6",
     "@typescript-eslint/eslint-plugin": "^5.60.1",
     "autoprefixer": "^10.4.14",
@@ -50,6 +51,7 @@
     "react-dom": "^18.2.0",
     "react-fast-marquee": "^1.6.2",
     "react-icons": "^4.10.1",
+    "react-material-ui-carousel": "^3.4.2",
     "react-owl-carousel": "^2.3.3",
     "react-slick": "^0.29.0",
     "react-toastify": "^9.1.3",

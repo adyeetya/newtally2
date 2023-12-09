@@ -12,7 +12,15 @@ import Modal from 'react-bootstrap/Modal'
 import Owl from './OwlCarousel'
 import OwlCarousel from './OwlCarousel'
 import FormComponent from '@components/FormComponent'
-import { ShoppingCart } from 'lucide-react'
+import {
+  Facebook,
+  Linkedin,
+  Mail,
+  PhoneCall,
+  Pin,
+  ShoppingCart,
+  Twitter,
+} from 'lucide-react'
 
 interface FormData {
   name: string
@@ -126,7 +134,7 @@ export const Navbar: FC = () => {
                 className="navbar-brand logo d-block h-100 d-flex justify-content-center"
               >
                 <CustomImage
-                  style={{ height: 116, width: 116 }}
+                  style={{ height: 216, width: 216 }}
                   src={'images/banner/logo.gif'}
                   className="mr-3 h-6 sm:h-9 rounded-md"
                   alt="Navbar Logo"
@@ -142,14 +150,22 @@ export const Navbar: FC = () => {
 
                   <div className="row justify-content-center align-items-end">
                     {/* add  carousel here */}
-                    <div className="col-md-4" style={{ marginRight: '40px' }}>
+                    <div
+                      className="col-md-4"
+                      style={{
+                        margin: '20px',
+                        width: '550px',
+                        marginLeft: '-120px',
+                      }}
+                    >
                       <OwlCarousel />
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-4 px-8">
                       <a href="/tallyinternational" target="_blank">
                         <img
                           src="/images/banner/tallyinternational.png"
                           className="tally-international-shake"
+                          style={{ width: '150%' }}
                         />
                       </a>
                     </div>
@@ -162,49 +178,51 @@ export const Navbar: FC = () => {
                         <ul className="list-inline">
                           <li>
                             <a href="http://www.facebook.com/TallySolution">
-                              <i className="fab fa-facebook-f"></i>
+                              <Facebook />
                             </a>
                           </li>
                           <li>
                             <a href="http://www.pinterest.com/tallysoftware">
-                              <i className="fab fa-pinterest"></i>
+                              <Pin />
                             </a>
                           </li>
                           <li>
                             <a href="http://twitter.com/#!/TALLYSOLUTION">
-                              <i className="fab fa-twitter"></i>
+                              <Twitter />
                             </a>
                           </li>
                           <li>
                             <a href="http://www.linkedin.com/pub/tally-customization-developers-delhi-ncr/38/5b/a7">
-                              <i className="fab fa-linkedin-in"></i>
+                              <Linkedin />
                             </a>
                           </li>
                         </ul>
                       </div>
                     </div>
-                    <div className="col-md-12">
+                    <div className="col-md-12" style={{ marginTop: '20px' }}>
                       <div className="d-flex">
                         <div className="d-flex align-items-end me-3">
-                          <i
-                            className="flaticon-email pe-2"
-                            style={{ fontSize: 25 }}
-                          ></i>
-                          <div>
-                            <h6>Email Us</h6>
-                            <a href="mailto:tallyproducts@gmail.com">
+                          <Mail style={{ fontSize: '24px' }} />
+                          <div style={{ marginLeft: '10px' }}>
+                            <h5> Email Us</h5>
+                            <a
+                              href="mailto:tallyproducts@gmail.com"
+                              style={{ fontSize: '24px' }}
+                            >
                               tallyproducts@gmail.com
                             </a>
                           </div>
                         </div>
                         <div className="d-none d-md-flex align-items-end me-3">
-                          <i
-                            className="flaticon-phone pe-2"
-                            style={{ fontSize: 25 }}
-                          ></i>
-                          <div>
-                            <h6>Call Us</h6>
-                            <a href="tel:+919582927928">+91 9582927928</a>
+                          <PhoneCall />
+                          <div style={{ marginLeft: '10px' }}>
+                            <h5>Call Us</h5>
+                            <a
+                              href="tel:+919582927928"
+                              style={{ fontSize: '24px' }}
+                            >
+                              +91 9582927928
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -1018,7 +1036,7 @@ export const Navbar: FC = () => {
                                       </li>
                                       <li>
                                         <a href="http://www.pinterest.com/tallysoftware">
-                                          <i className="fab fa-pinterest" />
+                                          <Pin />
                                         </a>
                                       </li>
                                       <li>
@@ -1050,8 +1068,10 @@ export const Navbar: FC = () => {
                                     className="btn me-1 me-sm-3"
                                     href="/buyoffline"
                                   >
-                                    <i className="flaticon-shopping-cart" />
-                                    <span>Buy Tally</span>
+                                    <ShoppingCart />
+                                    <span style={{ marginLeft: '10px' }}>
+                                      Buy Tally
+                                    </span>
                                   </a>
                                 </div>
                               </li>
@@ -1093,7 +1113,7 @@ export const Navbar: FC = () => {
             
           </div> */}
       </div>
-      <button
+      {/* <button
         aria-label="Go Up"
         onClick={onUp}
         className={classNames(
@@ -1106,7 +1126,7 @@ export const Navbar: FC = () => {
         )}
       >
         <IoIosArrowUp className="h-full w-full p-2 text-blue-700 group-hover:text-white" />
-      </button>
+      </button> */}
     </nav>
   )
 }
